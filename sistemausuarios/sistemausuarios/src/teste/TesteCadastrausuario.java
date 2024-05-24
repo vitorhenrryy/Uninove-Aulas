@@ -7,7 +7,7 @@ public class TesteCadastrausuario {
 
 	public static void main(String[] args) {
 		
-	usuario usuario = new usuario("Katia Cruz","Kcruz","kc123");
+	usuario usuario = new usuario("Beatriz","Vieira","1453");
 	
 	UsuarioDao usuarioDao = new UsuarioDao();
 	usuarioDao.cadastra(usuario);

@@ -19,11 +19,12 @@ Connection con = null;
 // "admin" -> Senha do usuário do root.
 
 try {
+	Class.forName("com.mysql.cj.jdbc.Driver");
 con = DriverManager.getConnection("jdbc:mysql://localhost/usuarios","root","admin");
 System.out.println("\nConexão com Banco de Dados bem sucedida!!");
 }
 
-catch (SQLException e) {
+catch (SQLException  | ClassNotFoundException e) {
 System.err.println("\nERRO ao conectar com Banco de Dados!!");
 e.printStackTrace();
 }
